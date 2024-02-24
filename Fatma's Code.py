@@ -165,55 +165,55 @@ class Ticket:
     #Using initializing constructor to initialize attributes of Ticket class
     def __init__(self, seat, destination, departFrom, departTime, arrivalTime, gate, terminal, flightDate):
         #Initializing attributes
-        self._seat = seat
-        self._destination = destination
-        self._departFrom = departFrom
-        self._departTime = departTime
-        self._arrivalTime = arrivalTime
-        self._gate = gate
-        self._terminal = terminal
-        self._flightDate = flightDate
+        self.__seat = seat
+        self.__destination = destination
+        self.__departFrom = departFrom
+        self.__departTime = departTime
+        self.__arrivalTime = arrivalTime
+        self.__gate = gate
+        self.__terminal = terminal
+        self.__flightDate = flightDate
 
     #Implementing setter and getter functions for Ticket class attributes
     def set_seat(self, seat):
-        self._seat = seat
+        self.__seat = seat
     def get_seat(self):
-        return self._seat
+        return self.__seat
 
     def set_destination(self, destination):
-        self._destination = destination
+        self.__destination = destination
     def get_destination(self):
-        return self._destination
+        return self.__destination
 
     def set_departFrom(self, departFrom):
-        self._departFrom = departFrom
+        self.__departFrom = departFrom
     def get_departFrom(self):
-        return self._departFrom
+        return self.__departFrom
 
     def set_departTime(self, departTime):
-        self._departTime = departTime
+        self.__departTime = departTime
     def get_departTime(self):
-        return self._departTime
+        return self.__departTime
 
     def set_arrivalTime(self, arrivalTime):
-        self._arrivalTime = arrivalTime
+        self.__arrivalTime = arrivalTime
     def get_arrivalTime(self):
-        return self._arrivalTime
+        return self.__arrivalTime
 
     def set_gate(self, gate):
-        self._gate = gate
+        self.__gate = gate
     def get_gate(self):
-        return self._gate
+        return self.__gate
 
     def set_terminal(self, terminal):
-        self._terminal = terminal
+        self.__terminal = terminal
     def get_terminal(self):
-        return self._terminal
+        return self.__terminal
 
     def set_flightDate(self, flightDate):
-        self._flightDate = flightDate
+        self.__flightDate = flightDate
     def get_flightDate(self):
-        return self._flightDate
+        return self.__flightDate
 
     #defining a method to generate the ticket's QR code
     def generateCode(self):
@@ -230,11 +230,11 @@ class Ticket:
     #display Ticket information
     def displayTicket(self):
         print("Ticket Details:")
-        print("Seat:", self._seat)
-        print("From:", self._departFrom, " -  To:", self._destination)
-        print("Flight Date:", self._flightDate)
-        print("Departure Time:", self._departTime, " -  Arrival Time:", self._arrivalTime)
-        print("Terminal:", self._terminal, " -  Gate:", self._gate)
+        print("Seat:", self.__seat)
+        print("From:", self.__departFrom, " -  To:", self.__destination)
+        print("Flight Date:", self.__flightDate)
+        print("Departure Time:", self.__departTime, " -  Arrival Time:", self.__arrivalTime)
+        print("Terminal:", self.__terminal, " -  Gate:", self.__gate)
 
 #Creating objects
 #Creating passenger 1 as an object and display all passenger details
